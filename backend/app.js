@@ -18,7 +18,7 @@ dotenv.config({
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: true,
     credentials: true,
   })
 );
@@ -38,6 +38,7 @@ app.use("/api", dashboardRoutes);
 
 const start = async () => {
   try {
+    await connectingDatabase();  // Ensure database connection is established
     app.listen(port, () => {
       console.log(`Server is running on port ${port}`);
     });
