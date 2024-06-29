@@ -8,7 +8,7 @@ import authRoutes from "./routes/AuthRoutes.js";
 import uploadRoutes from "./routes/FileUploadRoute.js";
 import dashboardRoutes from "./routes/DashboardRoutes.js";
 
-import { SpeedInsights } from "@vercel/speed-insights/next"
+// import { SpeedInsights } from "@vercel/speed-insights/next"
 import connectingDatabase from "./database/Connect.js";
 
 dotenv.config({
