@@ -16,12 +16,11 @@ dotenv.config({
 });
 
 const app = express();
-app.use(
-  cors({
-    origin: "https://picturesquare.vercel.app",
-    credentials: true,
-  })
-);
+app.options('*', cors({
+  origin: "https://picturesquare.vercel.app",
+  credentials: true,
+}));
+
 const port = process.env.PORT || 5000;
 
 authRoutes.use(bodyParser.json());
