@@ -7,7 +7,7 @@ const MyCollection = () => {
 
   const fetchFavorite = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/getUserFavorites', {
+      const response = await fetch('https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app//api/getUserFavorites', {
         credentials: 'include'
       });
 

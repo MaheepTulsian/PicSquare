@@ -10,7 +10,7 @@ const ArtDescription = () => {
         //fetch the add to purchase api
         const purchaseArt = async () => {
             try {
-                const response = await fetch('http://localhost:3000/api/addPurchase', {
+                const response = await fetch('https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app//api/addPurchase', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ const ArtDescription = () => {
 
     const fetchArt = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/getUserArt', {
+            const response = await fetch('https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app//api/getUserArt', {
                 credentials: 'include'
             });
 

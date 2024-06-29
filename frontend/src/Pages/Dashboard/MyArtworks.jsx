@@ -6,7 +6,7 @@ const MyArtworks = () => {
 
   const fetchArt = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/getUserArt', {
+      const response = await fetch('https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app//api/getUserArt', {
         credentials: 'include'
       });
 

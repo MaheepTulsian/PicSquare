@@ -6,7 +6,7 @@ const Artworks = () => {
 
   const fetchArt = async () => {
     try {
-      const artResponse = await fetch('http://localhost:3000/api/getAllArt', {
+      const artResponse = await fetch('https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app//api/getAllArt', {
         credentials: 'include'
       });
 
@@ -20,7 +20,7 @@ const Artworks = () => {
         }
       }
 
-      const favoriteResponse = await fetch('http://localhost:3000/api/getUserFavorites', {
+      const favoriteResponse = await fetch('https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app//api/getUserFavorites', {
         credentials: 'include'
       });
 
