@@ -16,13 +16,11 @@ dotenv.config({
 });
 
 const app = express();
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://picturesquare.vercel.app");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-  res.header("Access-Control-Allow-Credentials", "true");
-  next();
-});
+// Use CORS middleware
+app.use(cors({
+  origin: 'https://picturesquare.vercel.app', // allow this origin
+  credentials: true, // allow cookies to be sent
+}));
 
 
 const port = process.env.PORT || 5000;
