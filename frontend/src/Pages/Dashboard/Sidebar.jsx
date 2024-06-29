@@ -18,7 +18,7 @@ const Sidebar = () => {
   }
 
   const handleLogout = () => {
-    fetch('https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app//api/logout', {
+    fetch('https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app/api/logout', {
       method: 'GET',
       credentials: 'include',
     })
@@ -45,7 +45,7 @@ const Sidebar = () => {
 
   const getUser = async () => {
     try {
-      const response = await fetch('https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app//api/showUser', {
+      const response = await fetch('https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app/api/showUser', {
         method: 'GET',
         credentials: 'include',
       });

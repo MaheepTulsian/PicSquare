@@ -21,7 +21,7 @@ const Card = ({ id, title, price, image, author_img, author_name, isFavorite }) 
     try {
       if (isCurrentlyFavorite) {
         console.log(`${id} removed from favorites`);
-        const response = await fetch(`https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app//api/removeFavourite`, {
+        const response = await fetch(`https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app/api/removeFavourite`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ const Card = ({ id, title, price, image, author_img, author_name, isFavorite }) 
         console.log('Removed from favorites');
       } else {
         console.log(`${id} added to favorites`);
-        const response = await fetch(`https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app//api/addFavourite`, {
+        const response = await fetch(`https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app/api/addFavourite`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

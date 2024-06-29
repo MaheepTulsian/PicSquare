@@ -67,7 +67,7 @@ const TextToImage = () => {
                 const formData = new FormData();
                 formData.append('image', imageURL);
 
-                const res = await fetch('https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app//api/upload', {
+                const res = await fetch('https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app/api/upload', {
                     method: 'POST',
                     body: formData,
                 });

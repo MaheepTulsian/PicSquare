@@ -15,7 +15,7 @@ const LoginFormDarkTheme = () => {
     onSubmit: async (values) => {
       try {
         // Send a POST request to the server
-        const url = 'https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app//api/login';
+        const url = 'https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app/api/login';
         const response = await fetch(url, {
           method: 'POST',
           headers: {

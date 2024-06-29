@@ -36,7 +36,7 @@ const AvatarSelector = () => {
       const formData = new FormData();
       formData.append('image', img);
 
-      const res = await fetch('https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app//api/upload', {
+      const res = await fetch('https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app/api/upload', {
         method: 'POST',
         body: formData,
       });
@@ -64,7 +64,7 @@ const AvatarSelector = () => {
     },
     onSubmit: async (values) => {
       try {
-        const res = await fetch('https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app//api/profile', {
+        const res = await fetch('https://pic-square-backend-6k6ybz7b5-maheeps-projects.vercel.app/api/profile', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
