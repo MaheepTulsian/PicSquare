@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 const user = process.env.USER;
 const password = process.env.PASSWORD;
 
-const uri = `mongodb+srv://${user}:${password}@cluster0.zcooegm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+const uri = `mongodb+srv://${user}:${password}@cluster0.rnfrsyc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
 const connectingDatabase = async () => {
   try {
