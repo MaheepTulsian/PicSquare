@@ -21,7 +21,7 @@ const TextToImage = () => {
         setLoading(true);
 
         const apiPath = "https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image";
-        const apiKey = "sk-7XJ8GMCEwvBkh3r9nVBTSFL4mspNBH1Ok39lprKsiBvDK2gq";
+        const apiKey = "your-api-key-here";
 
         const requestOptions = {
             method: "POST",
